@@ -41,5 +41,15 @@ $happtArr = "I am always Hello.";
 $helloArr = replaceAtIndex($happtArr, 3, "Happy.");
 print_r($helloArr);
 
+//echo "\n--------------------\n";
+//위 코드를 써서
+//for랑 if로 돌려서  $stringArr[$index] == $replacement1 면 $replacement2로 바뀌게 해서 인덱스를 몰라도
+// 바꾸고 싶은 문자열을 내가 지정한 문자열로 바꾸는 함수 replaceAtString
+
+//echo "\n--------------------\n";
+//$happtArr = "I am always Hello.";
+//$happexpl = explode("$replacement1", $str_all);
+//$happimpl = implode("$replacement2", $happexpl);
+//의 원리를 써서 같은 기능으로 구현
 
 ?>

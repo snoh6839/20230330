@@ -16,4 +16,27 @@ echo "로또 번호: ";
 foreach ($lotto_numbers as $num) {
     echo $num . " ";
 }
+
+
+$lotto_num_count2 = 6;
+
+$numbers2 = range(1, 45);
+
+shuffle($numbers2);
+
+$lotto_numbers2 = array();
+for ($i = 0; $i < $lotto_num_count2; $i++) {
+    $random_number2 = rand(1, 45);
+    while (in_array($random_number2, $lotto_numbers2)) {
+        $random_number2 = rand(1, 45);
+    }
+    $lotto_numbers2[] = $random_number2;
+}
+
+echo "로또 번호: ";
+foreach ($lotto_numbers2 as $num2) {
+    echo $num2 . " ";
+}
+
+
 ?>

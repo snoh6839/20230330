@@ -27,4 +27,15 @@ $happtArrExpl = explode(" ", $happtArr);
 $replacements = array(3 => "Happy.");
 $helloArr = array_replace($happtArrExpl, $replacements);
 print_r($helloArr);
+
+function replaceAtIndex($string, $index, $replacement) {
+    $stringArr = explode(" ", $string);
+    $stringArr[$index] = $replacement;
+    return implode(" ", $stringArr);
+}
+
+$happtArr = "I am always Hello.";
+$helloArr = replaceAtIndex($happtArr, 3, "Happy.");
+print_r($helloArr);
+
 ?>

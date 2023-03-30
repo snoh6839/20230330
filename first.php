@@ -17,6 +17,7 @@ foreach ($lotto_numbers as $num) {
     echo $num . " ";
 }
 
+echo "\n----------\n";
 
 $lotto_num_count2 = 6;
 

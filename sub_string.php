@@ -14,9 +14,9 @@ for ($i=0; $i < count($tangArray); $i++) {
 
 echo "\n--------------------\n";
 
-define("ERROR", "ERROR (%d) : %s ERROR가 발생했습니다.\n");
+define("ERRORMSG", "ERROR (%d) : %s ERROR가 발생했습니다.\n");
 
-printf(ERROR, 1, "시스템");
-printf(ERROR, 2, "로그인");
-printf(ERROR, 3, "접속");
+printf(ERRORMSG, 1, "시스템");
+printf(ERRORMSG, 2, "로그인");
+printf(ERRORMSG, 3, "접속");
 ?>

@@ -19,4 +19,6 @@ define("ERRORMSG", "ERROR (%d) : %s ERROR가 발생했습니다.\n");
 printf(ERRORMSG, 1, "시스템");
 printf(ERRORMSG, 2, "로그인");
 printf(ERRORMSG, 3, "접속");
+
+
 ?>

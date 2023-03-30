@@ -93,8 +93,7 @@ echo "\n--------------------\n";
 function my_str_replace2($arr, $re1, $re2)
 {
     $str_expl = explode($re1, $arr);
-    $str_impl = implode($re2, $str_expl);
-    $result = $str_impl;
+    $result = implode($re2, $str_expl);
     return $result;
 }
 

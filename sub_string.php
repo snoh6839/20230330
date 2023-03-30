@@ -20,5 +20,11 @@ printf(ERRORMSG, 1, "시스템");
 printf(ERRORMSG, 2, "로그인");
 printf(ERRORMSG, 3, "접속");
 
+echo "\n--------------------\n";
 
+$happtArr = "I am always Hello.";
+$happtArrExpl = explode(" ", $happtArr);
+$replacements = array(3 => "Happy.");
+$helloArr = array_replace($happtArrExpl, $replacements);
+print_r($helloArr);
 ?>

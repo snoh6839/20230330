@@ -28,6 +28,8 @@ printf(ERRORMSG, 3, "접속");
 // $helloArr = array_replace($happtArrExpl, $replacements);
 // print_r($helloArr);
 
+// str_replace("hello","happy",$happtArr)
+
 echo "\n--------------------\n";
 
 function replaceAtIndex($string, $index, $replacement)

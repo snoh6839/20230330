@@ -41,12 +41,11 @@ $happtArr = "I am always Hello.";
 $helloArr = replaceAtIndex($happtArr, 3, "Happy.");
 print_r($helloArr);
 
-//echo "\n--------------------\n";
+
+echo "\n--------------------\n";
 //위 코드를 써서
 //for랑 if로 돌려서  $stringArr[$index] == $replacement1 면 $replacement2로 바뀌게 해서 인덱스를 몰라도
 // 바꾸고 싶은 문자열을 내가 지정한 문자열로 바꾸는 함수 replaceAtString
-
-echo "\n--------------------\n";
 
 function replaceAtString($string, $search, $replacement1, $replacement2)
 {
@@ -59,22 +58,13 @@ function replaceAtString($string, $search, $replacement1, $replacement2)
     return implode($search, $stringArr);
 }
 
-$happyArr = "I am always Happy.";
-$helloArr = replaceAtString($happyArr, " ", "Happy.", "Hello.");
+$happyArr = "I am always Hello.";
+$helloArr = replaceAtString($happyArr, " ", "Hello.", "Happy.");
 print_r($helloArr);
 
 echo "\n--------------------\n";
 
-
-//echo "\n--------------------\n";
-//$happtArr = "I am always Hello.";
-//$happexpl = explode("$replacement1", $str_all);
-//$happimpl = implode("$replacement2", $happexpl);
-//의 원리를 써서 같은 기능으로 구현
-
-echo "\n--------------------\n";
-
-function replaceAtString($string, $search, $replacement1, $replacement2)
+function my_str_replace($string, $search, $replacement1, $replacement2)
 {
     $stringArr = explode($search, $string);
     $tempArr = array();
@@ -88,13 +78,29 @@ function replaceAtString($string, $search, $replacement1, $replacement2)
     return implode($search, $tempArr);
 }
 
-$happyArr = "I am always Happy.";
-$helloArr = replaceAtString($happyArr, " ", "Happy.", "Hello.");
+$happyArr = "I am always Hello.";
+$helloArr = my_str_replace($happyArr, " ", "Hello.", "Happy.");
 print_r($helloArr);
 
+
+
 echo "\n--------------------\n";
+//$happtArr = "I am always Hello.";
+//$happexpl = explode("$replacement1", $str_all);
+//$happimpl = implode("$replacement2", $happexpl);
+//의 원리를 써서 같은 기능으로 구현
 
+function my_str_replace2($arr, $re1, $re2)
+{
+    $str_expl = explode($re1, $arr);
+    $str_impl = implode($re2, $str_expl);
+    $result = $str_impl;
+    return $result;
+}
 
+$happyArr = "I am always Hello.";
+echo my_str_replace2($happyArr, "Hello", "Happy");
 
+echo "\n--------------------\n";
 
 ?>
